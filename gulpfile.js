@@ -19,4 +19,4 @@ gulp.task('watch', function (done) {
   gulp.watch('./*.css', gulp.task('bs-reload'));
 })
 
-gulp.task('default', gulp.series('serve', 'watch'))
+gulp.task('default', gulp.series('serve', 'watch'));
