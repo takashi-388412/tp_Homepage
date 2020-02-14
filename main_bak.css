@@ -1,0 +1,291 @@
+/*
+現時点の問題点
+1.smartphone表示にすると、画面が崩れる
+2.footerが、親要素からはみでる
+→ main要素が原因ぽい
+*/
+
+/* --------------------------------------------
+* base
+* ---------------------------------------------*/
+html
+{
+  /* height: 101%; */
+  /* background-color: #f90; */
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  font-weight: normal;
+  color: #000;
+  text-align: center;
+  height: 100%;
+  background-color: #f90;
+}
+h1
+{
+  margin: 0;
+  padding: 0; 
+}
+h2
+{
+  margin: 0 0 20px -0;
+  padding: 0 0 0 12px;
+	font-size: 20px;
+  border-left: 12px solid #f90;
+}
+h3
+{
+  margin: 0;
+  padding: 0;
+	font-size: 16px;
+}
+p
+{
+  margin: 0 0 16px 0;
+  padding: 0;
+  text-indent: 1em;
+}
+a:link, a:visited, a:focus
+{
+  outline: none;
+  text-decoration: none;
+  color: #00f;
+}
+a:hover, a:active
+{
+  outline: none;
+  text-decoration: underline;
+  color: #00f;
+}
+a.external
+{
+  display: inline-block;
+  margin: 0;
+  padding: 0 20px 0 0;
+  background-image: url("imgs/icon_link.png");
+  background-repeat: no-repeat;
+  background-position: 100% 30%;
+  color: #00f;
+}
+a.button
+{
+  outline: none;
+  text-decoration: none;
+}
+
+/* --------------------------------------------
+* parts
+* ---------------------------------------------*/
+
+
+/* --------------------------------------------
+* 
+* company.html
+*
+* ---------------------------------------------*/
+/* --------------------------------------------
+* header
+* ---------------------------------------------*/
+.top
+{
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  width: 100%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.top-logo
+{
+  display: inline-block;
+  margin: 0;
+  padding: 10px 30px 10px 10px;
+  background-color: #000;
+}
+.top-logo img
+{
+  margin: 0 0 -14px 0;
+  padding: 0;
+  width: 75%;
+  height: 75%;
+}
+.top-navi
+{
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px;
+  color: #fff;
+}
+ul.menu
+{
+  margin: 0;
+  padding: 0;
+  
+}
+li.menu-item
+{
+  display: block;
+  margin: 12px 20px 0;
+  padding: 0;
+  list-style-type: none;
+  white-space: nowrap;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+.menu-item a
+{
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+}
+.menu-item a:hover
+{
+  outline: none;
+  text-decoration: none;
+  color: #ccc;
+}
+/* --------------------------------------------
+* main
+* ---------------------------------------------*/
+/* .middle
+{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+} */
+.main
+{
+  margin: 0 0 80px 0;
+  padding: 80px 0 0 0;
+  display: inline-block;
+  text-align: left;
+  /* min-width: 600px; */
+  /* max-width: 700px; */
+  vertical-align: top;
+}
+.main .content
+{
+  margin: 0;
+  padding: 40px 0 0 0;
+}
+/* #index .middle
+{
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  background: url("imgs/index_bg.jpg") no-repeat center 64px #253a56;
+} */
+/* --------------------------------------------
+* footer
+* ---------------------------------------------*/
+.bottom
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 12px;
+  
+}
+.bottom a
+{
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+}
+.bottom a:hover
+{
+  outline: none;
+  text-decoration: underline;
+  color: #fff;
+}
+.bottom-navi
+{
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px;
+  min-width: 600px;
+  max-width: 700px;
+}
+.copyright
+{
+  width: 100%;
+  text-align: right;
+  margin: 0 0 0 0;
+  font-size: 11px;
+
+}
+.intro
+{
+  margin: 120px 0;
+  color: #f90;
+  font-size: 20px;
+  font-weight: bold;
+}
+.info
+{
+  margin: 0;
+  padding: 4px;
+  float: right;
+}
+.info dt
+{
+  font-weight: bold;
+}
+.info dd
+{
+  margin-left: 40px;
+}
+.info a
+{
+  display: inline-block;
+  width: 360px;
+  outline: none;
+  text-decoration: none;
+  color: #333;
+  /* border: 4px solid #eee; */
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+.intro a:hover
+{
+  
+}
+.intro .empty
+{
+  min-width: 360px;
+}
+/* --------------------------------------------
+* 
+* company.html
+*
+* ---------------------------------------------*/
+table.list
+{
+  display: inline-block;
+  border-collapse: collapse;
+}
+table.list th
+{
+  margin: 0;
+  min-width: 100px;
+  padding: 12px 20px 2px 0;
+  vertical-align: top;
+  text-align: left;
+  font-weight: normal;
+  border-bottom: 1px dashed #ccc;
+}
+table.list td
+{
+  padding: 12px 4px 2px 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px dashed #ccc;
+}
+
+
+
