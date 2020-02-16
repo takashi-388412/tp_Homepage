@@ -11,8 +11,6 @@ body {
   font-size: 1.2rem;
   font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
   text-align: center;
-  background: #151515 url("../imgs/index_bg.jpg") no-repeat center;
-  background-size: cover;
 }
 *,*::before,*::after{
   box-sizing: border-box;
@@ -59,8 +57,12 @@ a,a:hover,a:link {
 /*-------------------------------------
 * main
 *-------------------------------------*/
+#index .main {
+  background: #151515 url("../imgs/index_bg.jpg") no-repeat center;
+  background-size: cover;
+}
 .main {
-  min-height: 800px;
+  min-height: 400px;
 }
 /*-------------------------------------
 * footer
@@ -81,3 +83,12 @@ a,a:hover,a:link {
 /*-------------------------------------
 * smartphone
 *-------------------------------------*/
+@media (max-width:768px) {
+  .global_nav {
+    display: block;
+  }
+  .nav_item {
+    font-size: 1.2rem;
+    margin: 10px 5px 0;
+  }
+}
