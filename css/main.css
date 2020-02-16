@@ -8,18 +8,71 @@ html {
 }
 body {
   color: #333;
-  font-size: 1.2rem;
-  font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif,"Hiragino Kaku Gothic ProN", Meiryo;
+  /* font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif; */
   text-align: center;
 }
 *,*::before,*::after{
   box-sizing: border-box;
 }
-a,a:hover,a:link {
+h1,h2,h3,p,.list td{
+  letter-spacing: 1px;
+}
+h1
+{
+  margin: 0;
+  padding: 0; 
+}
+h2
+{
+  margin: 0 0 20px -0;
+  padding: 0 0 0 12px;
+	font-size: 20px;
+  border-left: 12px solid #f90;
+  text-align: start;
+}
+h3
+{
+  margin: 0;
+  padding: 0;
+	font-size: 16px;
+  text-align: start;
+}
+p
+{
+  margin: 0 0 16px 0;
+  padding: 0;
+  text-indent: 1em;
+  text-align: start;
+  line-height: 2.0rem;
+}
+a:link, a:visited, a:focus
+{
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+}
+a:hover, a:active
+{
+  outline: none;
+  text-decoration: underline;
+  color: #00f;
+}
+a.external
+{
+  display: inline-block;
+  margin: 0;
+  padding: 0 20px 0 0;
+  background-image: url("imgs/icon_link.png");
+  background-repeat: no-repeat;
+  background-position: 100% 30%;
+  color: #00f;
+}
+/* a,a:hover,a:link {
   color: #d03c56;
   text-decoration: none;
-}
-
+} */
 /*-------------------------------------
 * parts
 *-------------------------------------*/
@@ -27,6 +80,11 @@ a,a:hover,a:link {
   content: '';
   display: block;
   clear: both;
+}
+a.button
+{
+  outline: none;
+  text-decoration: none;
 }
 /*-------------------------------------
 * header
@@ -36,11 +94,20 @@ a,a:hover,a:link {
   color: #fff;
   padding: 10px 50px;
 }
-.logo {
+.top-logo
+{
   display: inline-block;
-  font-size: 3.6rem;
-  margin-right: 15px;
-  vertical-align: middle;
+  padding: 10px;
+  margin: 0;
+  background-color: #000;
+}
+.top-logo img
+{
+  display: inline-block;
+  margin: 0 0 -14px 0;
+  padding: 0;
+  width: 75%;
+  height: auto;
 }
 .global_nav {
   display: inline-block;
@@ -60,9 +127,55 @@ a,a:hover,a:link {
 #index .main {
   background: #151515 url("../imgs/index_bg.jpg") no-repeat center;
   background-size: cover;
+  /* padding: 100px 80px; */
 }
 .main {
   min-height: 400px;
+  padding: 50px;
+}
+.content {
+  margin-bottom: 30px;
+}
+/* --- recuruit&company text ---*/
+table.list
+{
+  display: inline-block;
+  border-collapse: collapse;
+}
+table.list th
+{
+  margin: 0;
+  min-width: 100px;
+  padding: 12px 20px 2px 0;
+  vertical-align: top;
+  text-align: left;
+  font-weight: normal;
+  border-bottom: 1px dashed #ccc;
+}
+table.list td
+{
+  padding: 12px 4px 2px 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px dashed #ccc;
+  line-height: 2rem;
+}
+/* --- company googlegmap ---*/
+.ggmap {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: absolute;
+top: 0;
+left: 0;
+max-width: 600px;
+max-height: 450px;
 }
 /*-------------------------------------
 * footer
@@ -77,6 +190,7 @@ a,a:hover,a:link {
   background-color: #000;
   margin-top: 30px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 
@@ -84,11 +198,24 @@ a,a:hover,a:link {
 * smartphone
 *-------------------------------------*/
 @media (max-width:768px) {
+  /* --- base ---*/
+  .list td {
+    font-size: 1.2rem;
+  }
+  /* --- header ---*/
   .global_nav {
     display: block;
   }
   .nav_item {
     font-size: 1.2rem;
-    margin: 10px 5px 0;
+    margin: 10px 0px 5px;
+  }
+  /* --- main ---*/
+  .main {
+    padding: 50px 20px 0px;
+  }
+  /* --- footer ---*/
+  .footer {
+    font-size: 1.2rem;
   }
 }
