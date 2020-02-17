@@ -120,15 +120,20 @@ a.button
 .nav_item {
   display: inline-block;
   font-size: 1.6rem;
-  margin: 20px;
+  margin-right: 20px;
 }
 .nav_item a {
   display: inline-block;
+  width: 140px;
+  height: 50px;
+  line-height: 3;
   color: #fff;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
 }
 .nav_item a:hover {
   text-decoration: none;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.75);
   color: #000;
 }
 /*-------------------------------------
@@ -195,8 +200,13 @@ a.button
   color: #333;
   border: 1px solid gray;
   border-radius: 5px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   font-size: 1.4rem;
+  transition: 0.3s ease-in-out;
+}
+.info a:hover {
+  /* border: 1px solid gray; */
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.20);
+  transform: translateY(-4px);
 }
 .info .title {
   position: absolute;
@@ -227,14 +237,10 @@ a.button
   display: none;
 }
 
-.intro a:hover
-{
-  
-}
-.intro .empty
+/* .intro .empty
 {
   min-width: 360px;
-}
+} */
 /* --- recuruit&company text ---*/
 .list
 {
@@ -317,12 +323,19 @@ a.button
     padding: 5px 2px 2px;
   }
   /* --- header ---*/
+  .header {
+    padding: 10px;
+  }
   .global_nav {
     display: block;
   }
   .nav_item {
     font-size: 1.0rem;
-    margin: 10px 5px 5px 0;
+    margin: 0;
+  }
+  .nav_item a {
+    width: 80px;
+    height: 30px;
   }
   /* --- main ---*/
   .main {
