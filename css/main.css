@@ -74,30 +74,6 @@ a.external
   text-decoration: none;
 } */
 
-/* --- recuruit&company text ---*/
-.list
-{
-  display: inline-block;
-  border-collapse: collapse;
-}
-.list th
-{
-  margin: 0;
-  min-width: 150px;
-  padding: 12px 20px 2px 0;
-  vertical-align: top;
-  text-align: left;
-  font-weight: normal;
-  border-bottom: 1px dashed #ccc;
-}
-.list td
-{
-  padding: 12px 4px 2px 0;
-  text-align: left;
-  vertical-align: top;
-  border-bottom: 1px dashed #ccc;
-  line-height: 2rem;
-}
 /*-------------------------------------
 * parts
 *-------------------------------------*/
@@ -150,48 +126,160 @@ a.button
 /*-------------------------------------
 * main
 *-------------------------------------*/
-#index .main {
-  background: #151515 url("../imgs/index_bg.jpg") no-repeat center;
-  background-size: cover;
-  /* padding: 100px 80px; */
-}
 .main {
   min-height: 800px;
   padding: 50px;
+}
+#index .main {
+  background: #151515 url("../imgs/index_bg.jpg")no-repeat center;
+  background-color:rgba(255,255,255,0.3);
+  background-blend-mode:lighten;
+  background-size: cover;
+  min-height: 800px;
+}
+/*index.html main内*/
+.inner {
+  position: relative;
+  width: 50%;
+  min-width: 600px;
+  min-height: 500px;
+  margin: 0 auto;
 }
 .content {
   width: 550px;
   margin: 0 auto 30px;
 }
+/* --- index.html text ---*/
+.intro
+{
+  margin: 120px 0;
+  text-align: center;
+  color: #f90;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.info
+{
+  display: inline-block;
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+}
+.info dt
+{
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom:10px;
+}
+.info dd
+{
+  font-size: 1.4rem;
+  margin: 10px 0 0 86px;
+  line-height: 1.5;
+}
+.info a
+{
+  position: relative;
+  display: block;
+  outline: none;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  font-size: 1.4rem;
+}
+.info .title {
+  position: absolute;
+  margin: 0; 
+  top: 0;
+  left: 15%;
+  font-size: 1.5rem;
+}
+.logo {
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  width: 50px;
+  height: 20px;
+  line-height: 2;
+  font-size: 1.0rem;
+  color: #fff;
+  border-radius: 5px;
+}
+.logo.product {
+  background-color: #f90;
+  padding-left: 15px;
+  width: 70px;
+}
+/* 768px以下のみ出現*/
+.hidden {
+  display: none;
+}
+
+.intro a:hover
+{
+  
+}
+.intro .empty
+{
+  min-width: 360px;
+}
+/* --- recuruit&company text ---*/
+.list
+{
+  display: inline-block;
+  border-collapse: collapse;
+}
+.list th
+{
+  margin: 0;
+  min-width: 150px;
+  padding: 12px 20px 2px 0;
+  vertical-align: top;
+  text-align: left;
+  font-weight: normal;
+  border-bottom: 1px dashed #ccc;
+}
+.list td
+{
+  padding: 12px 4px 2px 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px dashed #ccc;
+  line-height: 2rem;
+}
 /* --- company googlegmap ---*/
 .ggmap {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px;
-height: 0;
-overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 .ggmap iframe,
 .ggmap object,
 .ggmap embed {
-position: absolute;
-top: 0;
-left: 0;
-max-width: 600px;
-max-height: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 600px;
+  max-height: 450px;
 }
 /*-------------------------------------
 * footer
 *-------------------------------------*/
 .footer {
-  width: 100%;
-  padding: 20px 0 30px;
+  height: 50px;
+  padding: 15px 0;
   background: #000;
   color: #fff;
 }
 .copyright {
   background-color: #000;
-  margin-top: 30px;
+  margin: 0;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -209,11 +297,14 @@ max-height: 450px;
     font-size: 1.0rem;
   }
   .list th {
-    min-width: 100px;
+    min-width: initial;
+    width: 25%;
+    /* min-width: 100px; */
     font-size: 1.1rem;
     padding: 5px 10px 2px 0;
   }
   .list td {
+    width: 70%;
     font-size: 1.0rem;
     padding: 5px 2px 2px;
   }
@@ -226,13 +317,70 @@ max-height: 450px;
     margin: 10px 5px 5px 0;
   }
   /* --- main ---*/
-  #index .main {
-  background: #151515 url("../imgs/index_bg.jpg") no-repeat;
-  /* padding: 100px 80px; */
-  }
   .main {
     padding: 50px 20px 0px;
-    /* min-height: 600px; */
+  }
+  #index .main {
+    background: none;
+    padding: 0;
+  }
+  .intro {
+    display: none;
+  }
+  .inner {
+    width: 80%;
+    /*position 解除*/
+    position: static;
+    /*min-width 解除*/
+    min-width: 300px;
+  }
+  .info {
+    /*position 解除*/
+    display: block;
+    position: static;
+    /* width: 80%; */
+    /* min-width: 100%; */
+    min-width: 300px;
+    margin: 50px auto 20px;
+  }
+  .info a {
+    position: relative;
+  }
+  .info dd {
+    font-size: 1.0rem;
+    margin: 10px 0 0 53px;
+    line-height: 1.5;
+  }
+  .info .title {
+   position: absolute;
+   margin: 0; 
+   top: 5%;
+   left: 15%;
+   font-size: 1.0rem;
+  }
+  .logo {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 20px;
+    line-height: 2;
+    font-size: 1.0rem;
+    color: #fff;
+  }
+  .logo.product {
+    background-color: #f90;
+    padding-left: 2px;
+    width: 45px;
+  }
+  .logo.company {
+    background-color: skyblue;
+  }
+  .logo.recruit{
+    background-color: greenyellow;
+    padding-left: 3px;
+    width: 45px;
   }
   .content {
     width: 250px;
