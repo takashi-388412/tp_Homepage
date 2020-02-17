@@ -11,13 +11,14 @@ body {
   font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif,"Hiragino Kaku Gothic ProN", Meiryo;
   /* font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif; */
-  text-align: center;
+  /* text-align: center; */
 }
 *,*::before,*::after{
   box-sizing: border-box;
 }
-h1,h2,h3,p,.list td{
+h1,h2,h3,p,.list th,.list td{
   letter-spacing: 1px;
+  line-height: 1.5;
 }
 h1
 {
@@ -45,7 +46,6 @@ p
   padding: 0;
   text-indent: 1em;
   text-align: start;
-  line-height: 2.0rem;
 }
 a:link, a:visited, a:focus
 {
@@ -73,6 +73,31 @@ a.external
   color: #d03c56;
   text-decoration: none;
 } */
+
+/* --- recuruit&company text ---*/
+.list
+{
+  display: inline-block;
+  border-collapse: collapse;
+}
+.list th
+{
+  margin: 0;
+  min-width: 150px;
+  padding: 12px 20px 2px 0;
+  vertical-align: top;
+  text-align: left;
+  font-weight: normal;
+  border-bottom: 1px dashed #ccc;
+}
+.list td
+{
+  padding: 12px 4px 2px 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px dashed #ccc;
+  line-height: 2rem;
+}
 /*-------------------------------------
 * parts
 *-------------------------------------*/
@@ -93,6 +118,7 @@ a.button
   background-color: #000;
   color: #fff;
   padding: 10px 50px;
+  text-align: center;
 }
 .top-logo
 {
@@ -134,31 +160,8 @@ a.button
   padding: 50px;
 }
 .content {
-  margin-bottom: 30px;
-}
-/* --- recuruit&company text ---*/
-table.list
-{
-  display: inline-block;
-  border-collapse: collapse;
-}
-table.list th
-{
-  margin: 0;
-  min-width: 100px;
-  padding: 12px 20px 2px 0;
-  vertical-align: top;
-  text-align: left;
-  font-weight: normal;
-  border-bottom: 1px dashed #ccc;
-}
-table.list td
-{
-  padding: 12px 4px 2px 0;
-  text-align: left;
-  vertical-align: top;
-  border-bottom: 1px dashed #ccc;
-  line-height: 2rem;
+  width: 550px;
+  margin: 0 auto 30px;
 }
 /* --- company googlegmap ---*/
 .ggmap {
@@ -199,8 +202,26 @@ max-height: 450px;
 *-------------------------------------*/
 @media (max-width:768px) {
   /* --- base ---*/
-  .list td {
+  h2 {
     font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1.0rem;
+  }
+  p {
+    font-size: 1.0rem;
+  }
+  .list th {
+    min-width: 100px;
+    font-size: 1.1rem;
+    /* padding: 5px; */
+    padding: 5px 10px 2px 0;
+  }
+  .list td {
+    font-size: 1.0rem;
+    /* padding: 5px; */
+  /* padding: 12px 4px 2px 0; */
+    padding: 5px 2px 2px;
   }
   /* --- header ---*/
   .global_nav {
@@ -208,11 +229,14 @@ max-height: 450px;
   }
   .nav_item {
     font-size: 1.2rem;
-    margin: 10px 0px 5px;
+    margin: 10px 5px 5px 0;
   }
   /* --- main ---*/
   .main {
     padding: 50px 20px 0px;
+  }
+  .content {
+    width: 250px;
   }
   /* --- footer ---*/
   .footer {
