@@ -51,13 +51,12 @@ a:link, a:visited, a:focus
 {
   outline: none;
   text-decoration: none;
-  color: #fff;
+  color: #00f;
 }
 a:hover, a:active
 {
   outline: none;
   text-decoration: underline;
-  color: #00f;
 }
 a.external
 {
@@ -111,6 +110,9 @@ a.button
   width: 75%;
   height: auto;
 }
+.top-logo a:hover {
+  opacity: 0.8;
+}
 .global_nav {
   display: inline-block;
   vertical-align: middle;
@@ -120,8 +122,14 @@ a.button
   font-size: 1.6rem;
   margin: 20px;
 }
-.nav_item:hover {
-  opacity: 0.8;
+.nav_item a {
+  display: inline-block;
+  color: #fff;
+}
+.nav_item a:hover {
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.9);
+  color: #000;
 }
 /*-------------------------------------
 * main
