@@ -156,7 +156,7 @@ a.button
   /* padding: 100px 80px; */
 }
 .main {
-  min-height: 400px;
+  min-height: 800px;
   padding: 50px;
 }
 .content {
@@ -205,22 +205,16 @@ max-height: 450px;
   h2 {
     font-size: 1.2rem;
   }
-  h3 {
-    font-size: 1.0rem;
-  }
-  p {
+  h3,p {
     font-size: 1.0rem;
   }
   .list th {
     min-width: 100px;
     font-size: 1.1rem;
-    /* padding: 5px; */
     padding: 5px 10px 2px 0;
   }
   .list td {
     font-size: 1.0rem;
-    /* padding: 5px; */
-  /* padding: 12px 4px 2px 0; */
     padding: 5px 2px 2px;
   }
   /* --- header ---*/
@@ -228,12 +222,17 @@ max-height: 450px;
     display: block;
   }
   .nav_item {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     margin: 10px 5px 5px 0;
   }
   /* --- main ---*/
+  #index .main {
+  background: #151515 url("../imgs/index_bg.jpg") no-repeat;
+  /* padding: 100px 80px; */
+  }
   .main {
     padding: 50px 20px 0px;
+    /* min-height: 600px; */
   }
   .content {
     width: 250px;
