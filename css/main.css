@@ -3,6 +3,7 @@
 /*-------------------------------------
 * base
 *-------------------------------------*/
+
 html {
   font-size: 62.5%;
 }
@@ -10,8 +11,13 @@ body {
   color: #333;
   font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif,"Hiragino Kaku Gothic ProN", Meiryo;
-  /* font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif; */
-  /* text-align: center; */
+}
+body,
+#container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* min-height: 100%; */
 }
 *,*::before,*::after{
   box-sizing: border-box;
@@ -90,6 +96,8 @@ a.button
 * header
 *-------------------------------------*/
 .header {
+  position: fixed;
+  width: 100%;
   background-color: #000;
   color: #fff;
   padding: 10px 50px;
@@ -140,15 +148,17 @@ a.button
 * main
 *-------------------------------------*/
 .main {
-  min-height: 800px;
-  padding: 50px;
+  padding-top: 8%;
 }
 #index .main {
   background: #151515 url("../imgs/index_bg.jpg")no-repeat center;
   background-color:rgba(255,255,255,0.3);
   background-blend-mode:lighten;
   background-size: cover;
-  min-height: 800px;
+  min-height: 95vh;
+}
+#index .footer {
+  height: 5vh;
 }
 /*index.html main内*/
 .inner {
@@ -165,7 +175,8 @@ a.button
 /* --- index.html text ---*/
 .intro
 {
-  margin: 120px 0;
+  /* margin: 120px 0; */
+  padding: 120px 0;
   text-align: center;
   color: #f90;
   font-size: 20px;
@@ -286,10 +297,10 @@ a.button
 * footer
 *-------------------------------------*/
 .footer {
-  height: 50px;
   padding: 15px 0;
   background: #000;
   color: #fff;
+  margin-top: auto;
 }
 .copyright {
   background-color: #000;
@@ -325,6 +336,7 @@ a.button
   /* --- header ---*/
   .header {
     padding: 10px;
+    z-index: 1;
   }
   .global_nav {
     display: block;
@@ -339,11 +351,15 @@ a.button
   }
   /* --- main ---*/
   .main {
-    padding: 50px 20px 0px;
+    padding-top: 130px;
   }
   #index .main {
     background: none;
-    padding: 0;
+    padding-top: 120px;
+    min-height: 150px;
+  }
+  #index .footer {
+    height: auto;
   }
   .intro {
     display: none;
@@ -352,7 +368,8 @@ a.button
     width: 80%;
     /*position 解除*/
     position: static;
-    /*min-width 解除*/
+    /*min-height 解除*/
+    min-height: initial;
     min-width: 300px;
   }
   .info {
