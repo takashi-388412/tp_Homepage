@@ -71,9 +71,9 @@ a.button {
 .header {
   position: fixed; /*header 固定*/
   width: 100%;
+  padding: 10px 50px;
   background-color: #000;
   color: #fff;
-  padding: 10px 50px;
   text-align: center;
   box-shadow: 0 0 10px 2px #696969;
 }
@@ -84,8 +84,8 @@ a.button {
 }
 .top-logo img {
   display: inline-block;
-  margin: 0 0 -14px 0;
   width: 75%;
+  margin: 0 0 -14px 0;
 }
 .top-logo a:hover {
   opacity: 0.8;
@@ -103,9 +103,9 @@ a.button {
   display: inline-block;
   width: 140px;
   height: 50px;
-  line-height: 3;
   color: #fff;
   /* transition: 0.3s ease-in-out; */
+  line-height: 3;
   border-radius: 10px;
 }
 .nav_item a:hover {
@@ -121,12 +121,12 @@ a.button {
 }
 /*index.html のみ*/
 #index .main {
+  min-height: 95vh; /*ブラウザの高さ 95%に指定*/
+  padding-top: 8%; 
   background: #151515 url("../imgs/index_bg.jpg")no-repeat center;
   background-color:rgba(255,255,255,0.3); /*　背景画像 透過*/
   background-blend-mode:lighten; /*　背景画像 透過*/
   background-size: cover;
-  padding-top: 8%; 
-  min-height: 95vh; /*ブラウザの高さ 95%に指定*/
 }
 #index .footer {
   height: 5vh;/*mainと合わせて100%*/
@@ -140,8 +140,8 @@ a.button {
 }
 .intro {
   padding: 120px 0;
-  text-align: center;
   color: #f90;
+  text-align: center;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -155,12 +155,12 @@ a.button {
 .info a {
   position: relative;
   display: block;
-  outline: none;
-  text-decoration: none;
   color: #333;
   border: 1px solid #a9a9a9;
   border-radius: 5px;
   font-size: 1.4rem;
+  outline: none;
+  text-decoration: none;
   transition: 0.3s ease-in-out;
 }
 .info a:hover {
@@ -175,12 +175,12 @@ a.button {
 }
 .info dt {
   display: inline-block;
-  font-weight: bold;
   margin-bottom:10px;
+  font-weight: bold;
 }
 .info dd {
-  font-size: 1.4rem;
   margin: 10px 0 0 86px;
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 /* index.html以外*/
@@ -196,15 +196,15 @@ a.button {
   left: 2%;
   width: 50px;
   height: 20px;
-  line-height: 2;
-  font-size: 1.0rem;
   color: #fff;
+  font-size: 1.0rem;
+  line-height: 2;
   border-radius: 5px;
 }
 .logo.product {
+  width: 70px;
   background-color: #f90;
   padding-left: 15px;
-  width: 70px;
 }
 /* --- recruit,company.html ---*/
 .list {
@@ -251,16 +251,16 @@ a.button {
 * footer
 *-------------------------------------*/
 .footer {
+  margin-top: auto;
   padding: 15px 0;
   background: #000;
   color: #fff;
-  margin-top: auto;
 }
 .copyright {
-  background-color: #000;
   margin: 0;
-  letter-spacing: 1px;
+  background-color: #000;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 
@@ -277,8 +277,8 @@ h3,p {
 }
 /* --- header ---*/
 .header {
-  padding: 10px;
   z-index: 1;
+  padding: 10px;
 }
 .top-logo {
   padding-bottom: 5px;
@@ -287,8 +287,8 @@ h3,p {
   display: block;
 }
 .nav_item {
-  font-size: 1.0rem;
   margin: 0;
+  font-size: 1.0rem;
 }
 .nav_item a {
   width: 80px;
@@ -303,17 +303,17 @@ h3,p {
 /*index.html のみ*/
 #index .main {
   background: none;
-  padding-top: 100px;
   min-height: 150px;
+  padding-top: 100px;
 }
 #index .footer {
   height: auto;
 }
 .inner {
-  width: 80%;
   position: static;  /*position 解除*/
-  min-height: initial;  /*min-height 解除*/
+  width: 80%;
   min-width: 300px;
+  min-height: initial;  /*min-height 解除*/
 }
 .intro {
   display: none;
@@ -329,14 +329,14 @@ h3,p {
 }
 .info .title {
   position: absolute;
-  margin: 0; 
   top: 5%;
   left: 15%;
+  margin: 0; 
   font-size: 1.0rem;
 }
 .info dd {
-  font-size: 1.0rem;
   margin: 10px 0 0 53px;
+  font-size: 1.0rem;
 }
 /* index.html以外*/
 .content {
@@ -349,29 +349,29 @@ h3,p {
   left: 0;
 }
 .logo.product {
-  background-color: #f90;
-  padding-left: 2px;
   width: 45px;
+  padding-left: 2px;
+  background-color: #f90;
 }
 .logo.company {
   background-color: skyblue;
 }
 .logo.recruit{
-  background-color: greenyellow;
-  padding-left: 3px;
   width: 45px;
+  padding-left: 3px;
+  background-color: greenyellow;
 }
 /* --- recruit,company.html ---*/
 .list th {
   min-width: initial;
   width: 25%;
-  font-size: 1.1rem;
   padding: 5px 10px 2px 0;
+  font-size: 1.1rem;
 }
 .list td {
   width: 70%;
-  font-size: 1.0rem;
   padding: 5px 2px 2px;
+  font-size: 1.0rem;
 }
 /* --- footer ---*/
 .footer {
