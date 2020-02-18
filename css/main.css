@@ -17,7 +17,6 @@ body,
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* min-height: 100%; */
 }
 *,*::before,*::after{
   box-sizing: border-box;
@@ -136,7 +135,7 @@ a.button
   height: 50px;
   line-height: 3;
   color: #fff;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
   border-radius: 10px;
 }
 .nav_item a:hover {
