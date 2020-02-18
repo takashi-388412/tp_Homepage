@@ -338,6 +338,9 @@ a.button
     padding: 10px;
     z-index: 1;
   }
+  .top-logo {
+    padding-bottom: 5px;
+  }
   .global_nav {
     display: block;
   }
@@ -347,7 +350,8 @@ a.button
   }
   .nav_item a {
     width: 80px;
-    height: 30px;
+    height: 25px;
+    line-height: 2.2;
   }
   /* --- main ---*/
   .main {
