@@ -101,6 +101,7 @@ a.button
   color: #fff;
   padding: 10px 50px;
   text-align: center;
+  box-shadow: 0 0 10px 2px #696969;
 }
 .top-logo
 {
@@ -211,7 +212,7 @@ a.button
   outline: none;
   text-decoration: none;
   color: #333;
-  border: 1px solid gray;
+  border: 1px solid #a9a9a9;
   border-radius: 5px;
   font-size: 1.4rem;
   transition: 0.3s ease-in-out;
