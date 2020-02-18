@@ -247,6 +247,17 @@ a.button {
   max-width: 600px;
   max-height: 450px;
 }
+.ggmap .external {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  color: #f90;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.ggmap .external:hover {
+  opacity: 0.5;
+}
 /*-------------------------------------
 * footer
 *-------------------------------------*/
