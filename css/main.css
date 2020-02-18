@@ -350,15 +350,16 @@ h3,p {
 }
 .logo.product {
   width: 45px;
-  padding-left: 2px;
+  padding-left: 3px;
   background-color: #f90;
 }
 .logo.company {
   background-color: skyblue;
+  padding-left: 1px;
 }
 .logo.recruit{
   width: 45px;
-  padding-left: 3px;
+  padding-left: 5px;
   background-color: greenyellow;
 }
 /* --- recruit,company.html ---*/
