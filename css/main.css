@@ -147,14 +147,16 @@ a.button
 * main
 *-------------------------------------*/
 .main {
-  /* padding: 130px; */
-  padding-top: 8%;
+  padding: 100px;
+  /* padding-top: 8%; */
+  /* padding-top: 15%; */
 }
 #index .main {
   background: #151515 url("../imgs/index_bg.jpg")no-repeat center;
   background-color:rgba(255,255,255,0.3);
   background-blend-mode:lighten;
   background-size: cover;
+  padding-top: 8%;
   min-height: 95vh;
 }
 #index .footer {
@@ -355,11 +357,12 @@ a.button
   }
   /* --- main ---*/
   .main {
+    padding: 0;
     padding-top: 130px;
   }
   #index .main {
     background: none;
-    padding-top: 120px;
+    padding-top: 100px;
     min-height: 150px;
   }
   #index .footer {
