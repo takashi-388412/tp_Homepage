@@ -385,6 +385,10 @@ h3,p {
   padding: 5px 2px 2px;
   font-size: 1.0rem;
 }
+/* --- company.html googlegmap ---*/
+.ggmap .external {
+  display: none;
+}
 /* --- footer ---*/
 .footer {
   font-size: 1.2rem;
