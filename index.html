@@ -4,100 +4,101 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-
-  
-
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0"　/>
   <link href="css/reset.css" type="text/css" rel="stylesheet" />
   <link href="css/main.css" type="text/css" rel="stylesheet" />
   <title>techno:plus.</title>
-  
 </head>
+
 <body id="index">
+
+  <!-- container footerを最下部に固定に必要-->
   <div id="container">
-  <!-- header -->
-  <header class="header clearfix">
-    <div class="top-logo">
-      <h1><a class="button" href="index.html"><img src="imgs/logo_r.png" /></a></h1>
-    </div>
-    </h1> 
-    <nav class="global_nav">
-      <ul>
-        <li class="nav_item"><a href="./product.html">製品・サービス</a></li>
-        <li class="nav_item"><a href="./company.html">会社情報</a></li>
-        <li class="nav_item"><a href="./recruit.html">採用情報</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- main -->
-  <main class="main">
-    <div class="inner">
-      <!-- introduce -->
-      <div class="intro">
-       テクノプラスはプログラムを作る会社です。
+
+    <!-- header -->
+    <header class="header clearfix">
+      <div class="top-logo">
+        <h1><a class="button" href="index.html"><img src="imgs/logo_r.png" /></a></h1>
       </div>
-      <!-- info -->
-      <div class="info product">
-        <a href="product.html">
-          <dt>
-            <span class="logo product">Product</span>
-            <p class="title">運用型広告レポート作成支援システム「glu」</p>
-          </dt>
-          <dd> 
-            アタラとの共同開発により生まれたレポーティングシステム。<br />
-            現在、バージョン3.0を公開中。
-          </dd>
-        </a>
-      </div>
-      <!-- company -->
-      <div class="info hidden">
-        <a href="company.html">
-          <dt>
-            <span class="logo company">Company</span>
-            <p class="title">テクノプラスの会社情報</p>
-          </dt>
-          <dd> 
-            自社サービスの会社で、「glu」をリリース中。<br />
-            完全内勤です。<br />
-            勤務地などの会社概要はこちらから。
-          </dd>
-        </a>
+      </h1> 
+      <nav class="global_nav">
+        <ul>
+          <li class="nav_item"><a href="./product.html">製品・サービス</a></li>
+          <li class="nav_item"><a href="./company.html">会社情報</a></li>
+          <li class="nav_item"><a href="./recruit.html">採用情報</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <div class="inner">
+        <!-- introduce -->
+        <div class="intro">
+        テクノプラスはプログラムを作る会社です。
+        </div>
+        <!-- info -->
+        <div class="info product">
+          <a href="product.html">
+            <dt>
+              <span class="logo product">Product</span>
+              <p class="title">運用型広告レポート作成支援システム「glu」</p>
+            </dt>
+            <dd> 
+              アタラとの共同開発により生まれたレポーティングシステム。<br />
+              現在、バージョン3.0を公開中。
+            </dd>
+          </a>
+        </div>
+        <!-- spのみ表示 -->
+        <div class="info hidden">
+          <a href="company.html">
+            <dt>
+              <span class="logo company">Company</span>
+              <p class="title">テクノプラスの会社情報</p>
+            </dt>
+            <dd> 
+              自社サービスの会社で、「glu」をリリース中。<br />
+              完全内勤です。<br />
+              勤務地などの会社概要はこちらから。
+            </dd>
+          </a>
+        </div>
+
+        <!-- spのみ表示 -->
+        <div class="info hidden">
+          <a href="recruit.html">
+            <dt>
+              <span class="logo recruit">Recruit</span>
+              <p class="title">採用情報</p>
+            </dt>
+            <dd> 
+              プログラミングは好きだが実務未経験の方、<br />
+              コミュニケーションは苦手でもプログラミングは自信ありといった方、大歓迎。
+            </dd>
+          </a>
+        </div>
       </div>
 
-      <!-- recruit -->
-      <!-- <div class="info recruit"> -->
-      <div class="info hidden">
-        <a href="recruit.html">
-          <dt>
-            <span class="logo recruit">Recruit</span>
-            <p class="title">採用情報</p>
-          </dt>
-          <dd> 
-            プログラミングは好きだが実務未経験の方、<br />
-            コミュニケーションは苦手でもプログラミングは自信ありといった方、大歓迎。
-          </dd>
-        </a>
-      </div>
+    </main>
 
-     </div>
-  </main>
-  <!-- footer -->
-  <footer class="footer">
-   <p class="copyright"> © TECHNOPLUS Corp. All Rights Reserved.</p>
-  </footer>  
+
+    <!-- footer -->
+    <footer class="footer">
+    <p class="copyright"> © TECHNOPLUS Corp. All Rights Reserved.</p>
+    </footer>  
+
   </div>
 
-<!-- javascript -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140868355-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- javascript -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140868355-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-140868355-1');
-</script>
+    gtag('config', 'UA-140868355-1');
+  </script>
 </body>
 </html>
