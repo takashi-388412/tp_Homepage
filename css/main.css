@@ -25,11 +25,6 @@ h1,h2,h3,p,.list th,.list td{
   letter-spacing: 1px;
   line-height: 1.5;
 }
-h1
-{
-  margin: 0;
-  padding: 0; 
-}
 h2
 {
   margin: 0 0 20px -0;
@@ -40,15 +35,12 @@ h2
 }
 h3
 {
-  margin: 0;
-  padding: 0;
 	font-size: 16px;
   text-align: start;
 }
 p
 {
   margin: 0 0 16px 0;
-  padding: 0;
   text-indent: 1em;
   text-align: start;
 }
@@ -73,10 +65,6 @@ a.external
   background-position: 100% 30%;
   color: #00f;
 }
-/* a,a:hover,a:link {
-  color: #d03c56;
-  text-decoration: none;
-} */
 
 /*-------------------------------------
 * parts
@@ -107,14 +95,12 @@ a.button
 {
   display: inline-block;
   padding: 10px;
-  margin: 0;
   background-color: #000;
 }
 .top-logo img
 {
   display: inline-block;
   margin: 0 0 -14px 0;
-  padding: 0;
   width: 75%;
   height: auto;
 }
@@ -149,8 +135,6 @@ a.button
 *-------------------------------------*/
 .main {
   padding: 150px;
-  /* padding-top: 8%; */
-  /* padding-top: 15%; */
 }
 #index .main {
   background: #151515 url("../imgs/index_bg.jpg")no-repeat center;
@@ -191,7 +175,7 @@ a.button
   display: inline-block;
   position: absolute;
   bottom: 35%;
-  right: 0%;
+  right: 0;
 }
 .info dt
 {
@@ -218,13 +202,11 @@ a.button
   transition: 0.3s ease-in-out;
 }
 .info a:hover {
-  /* border: 1px solid gray; */
   box-shadow: 5px 10px 5px rgba(0,0,0,0.20);
   transform: translateY(-4px);
 }
 .info .title {
   position: absolute;
-  margin: 0; 
   top: 0;
   left: 15%;
   font-size: 1.5rem;
@@ -250,11 +232,6 @@ a.button
 .hidden {
   display: none;
 }
-
-/* .intro .empty
-{
-  min-width: 360px;
-} */
 /* --- recuruit&company text ---*/
 .list
 {
@@ -263,7 +240,6 @@ a.button
 }
 .list th
 {
-  margin: 0;
   min-width: 150px;
   padding: 12px 20px 2px 0;
   vertical-align: top;
@@ -279,7 +255,7 @@ a.button
   border-bottom: 1px dashed #ccc;
   line-height: 2rem;
 }
-/* --- company googlegmap ---*/
+/* --- company.html googlegmap ---*/
 .ggmap {
   position: relative;
   padding-bottom: 56.25%;
@@ -327,7 +303,6 @@ a.button
   .list th {
     min-width: initial;
     width: 25%;
-    /* min-width: 100px; */
     font-size: 1.1rem;
     padding: 5px 10px 2px 0;
   }
@@ -374,18 +349,13 @@ a.button
   }
   .inner {
     width: 80%;
-    /*position 解除*/
-    position: static;
-    /*min-height 解除*/
-    min-height: initial;
+    position: static;  /*position 解除*/
+    min-height: initial;  /*min-height 解除*/
     min-width: 300px;
   }
   .info {
-    /*position 解除*/
     display: block;
-    position: static;
-    /* width: 80%; */
-    /* min-width: 100%; */
+    position: static;  /*position 解除*/
     min-width: 300px;
     margin: 50px auto 20px;
   }
