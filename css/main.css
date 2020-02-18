@@ -147,6 +147,7 @@ a.button
 * main
 *-------------------------------------*/
 .main {
+  /* padding: 130px; */
   padding-top: 8%;
 }
 #index .main {
@@ -186,8 +187,8 @@ a.button
 {
   display: inline-block;
   position: absolute;
-  bottom: 50%;
-  right: 0;
+  bottom: 20%;
+  right: 0%;
 }
 .info dt
 {
@@ -211,7 +212,7 @@ a.button
   border: 1px solid gray;
   border-radius: 5px;
   font-size: 1.4rem;
-  /* transition: 0.3s ease-in-out; */
+  transition: 0.3s ease-in-out;
 }
 .info a:hover {
   /* border: 1px solid gray; */
