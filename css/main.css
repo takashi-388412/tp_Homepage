@@ -247,6 +247,7 @@ a.button {
   max-width: 600px;
   max-height: 450px;
 }
+/*ggmap 地図へ誘導*/
 .ggmap .external {
   position: absolute;
   bottom: 5px;
